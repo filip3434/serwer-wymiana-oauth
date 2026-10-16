@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Serwer Wymiana — prywatna integracja Google Drive i rclone do kontrolowanej wymiany plików.">
+  <title>Serwer Wymiana — integracja Google Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="shell"><a class="brand" href="./">Serwer Wymiana</a><nav aria-label="Nawigacja"><a href="./">O aplikacji</a><a href="privacy.html">Polityka prywatności</a></nav></div></header>
+  <main class="shell">
+    <div class="kicker">Prywatna integracja</div>
+    <h1>Serwer Wymiana</h1>
+    <p class="lead">Prosta integracja Dysku Google z lokalnym komputerem użytkownika, służąca do automatycznej wymiany plików za pośrednictwem oprogramowania rclone.</p>
+    <section class="panel" aria-labelledby="dzialanie"><h2 id="dzialanie">Jak działa?</h2><p>Użytkownik wskazuje foldery na swoim Dysku Google i lokalnym urządzeniu. Zaplanowane transfery kopiują pliki w dwóch kierunkach. Operacje wykonuje lokalne narzędzie <a href="https://rclone.org/" rel="noopener noreferrer">rclone</a>. Ta strona jest wyłącznie publiczną informacją o integracji — nie jest panelem dostępu do danych.</p></section>
+    <h2>Uprawnienia Google</h2>
+    <p>Po zatwierdzeniu zgody OAuth narzędzie rclone może uzyskać <strong>pełny dostęp do Dysku Google</strong> w ramach zakresu <code>https://www.googleapis.com/auth/drive</code>. To szersze uprawnienie niż pojedynczy folder, chociaż zadanie automatycznej wymiany plików jest skonfigurowane do obsługi wybranych folderów.</p>
+    <h2>Dane i bezpieczeństwo</h2>
+    <ul>
+      <li>Transfery i przechowywanie tokenu autoryzacyjnego odbywają się na urządzeniu kontrolowanym przez użytkownika, nie na tej stronie.</li>
+      <li>Strona nie zawiera formularza logowania, nie żąda przesyłania plików i nie uruchamia transferów.</li>
+      <li>Użytkownik może cofnąć dostęp aplikacji w ustawieniach bezpieczeństwa swojego konta Google.</li>
+    </ul>
+    <p>Więcej informacji: <a href="privacy.html">Polityka prywatności</a>.</p>
+    <h2>Kontakt</h2><p>W sprawach dotyczących strony można utworzyć zgłoszenie w <a href="https://github.com/filip3434/serwer-wymiana-oauth/issues">repozytorium projektu na GitHub</a>. Prosimy nie publikować tokenów, haseł ani prywatnych plików.</p>
+  </main>
+  <footer><div class="shell"><span>Serwer Wymiana · prywatna aplikacja narzędziowa</span><span><a href="privacy.html">Polityka prywatności</a></span></div></footer>
+</body>
+</html>

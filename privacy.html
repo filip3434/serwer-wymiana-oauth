@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Polityka prywatności aplikacji Serwer Wymiana i integracji z Google Drive.">
+  <title>Polityka prywatności — Serwer Wymiana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="shell"><a class="brand" href="./">Serwer Wymiana</a><nav aria-label="Nawigacja"><a href="./">O aplikacji</a><a href="privacy.html" aria-current="page">Polityka prywatności</a></nav></div></header>
+  <main class="shell">
+    <div class="kicker">Ochrona danych</div>
+    <h1>Polityka prywatności</h1>
+    <p class="lead">Dotyczy prywatnej integracji „Serwer Wymiana”, która wykorzystuje Google Drive API i lokalnie uruchomione oprogramowanie rclone.</p>
+    <p><strong>Data aktualizacji:</strong> 16 października 2026 r.</p>
+    <h2>1. Cel i zakres przetwarzania</h2>
+    <p>Aplikacja umożliwia użytkownikowi przesyłanie plików pomiędzy wskazanymi folderami Dysku Google a jego własnym urządzeniem. Integracja może odczytywać nazwy plików, metadane i zawartość plików potrzebnych do ich skopiowania, a także zapisywać pliki na Dysku Google.</p>
+    <h2>2. Dostęp do danych Google</h2>
+    <p>Integracja korzysta z uprawnienia <code>https://www.googleapis.com/auth/drive</code>, które daje szeroki dostęp do plików Dysku Google. Pomimo technicznie szerokiego zakresu OAuth codzienny transfer jest skonfigurowany dla wybranych folderów. Wybór tych folderów jest ograniczeniem konfiguracji operacyjnej, nie ograniczeniem samego tokenu OAuth.</p>
+    <h2>3. Gdzie trafiają dane i tokeny</h2>
+    <p>Pliki są kopiowane między Dyskiem Google a lokalnym urządzeniem użytkownika. Token OAuth i konfiguracja połączenia są przechowywane lokalnie przez rclone. Ta witryna statyczna nie odbiera tokenów, nie otrzymuje plików z Dysku i nie obsługuje transferów.</p>
+    <h2>4. Udostępnianie i wykorzystanie danych</h2>
+    <p>Integracja nie sprzedaje danych użytkownika ani nie wykorzystuje zawartości plików do reklam, profilowania czy trenowania modeli. W ramach opisywanego przepływu dane są przetwarzane przez Google Drive oraz na urządzeniu użytkownika; nie ma oddzielnej usługi pośredniczącej w transferze plików. Nie są one celowo przekazywane osobom trzecim przez tę integrację.</p>
+    <h2>5. Okres przechowywania i usuwanie</h2>
+    <p>Skopiowane pliki pozostają w docelowym folderze Dysku Google lub na urządzeniu użytkownika do czasu ich ręcznego usunięcia. Automatyczny transfer nie usuwa plików docelowych. Użytkownik może w dowolnym momencie usunąć pliki, zatrzymać lokalną automatyzację, usunąć lokalną konfigurację rclone i cofnąć autoryzację Google.</p>
+    <h2>6. Witryna i pliki cookie</h2>
+    <p>Witryna jest statyczna i nie posiada własnych narzędzi analitycznych, reklamowych ani formularzy zbierających dane osobowe. Jest hostowana przez GitHub Pages, który może przetwarzać dane techniczne odwiedzin zgodnie z własną <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">polityką prywatności</a>.</p>
+    <h2>7. Kontrola dostępu</h2>
+    <p>Uprawnienia integracji można cofnąć na stronie <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Połączenia z aplikacjami innych firm w koncie Google</a>. Cofnięcie dostępu zatrzyma dalszą wymianę plików, ale nie usuwa automatycznie kopii utworzonych wcześniej.</p>
+    <h2>8. Kontakt</h2>
+    <p>Pytania dotyczące tej integracji można zgłaszać przez <a href="https://github.com/filip3434/serwer-wymiana-oauth/issues">GitHub Issues projektu</a>. Nie należy umieszczać w publicznym zgłoszeniu danych poufnych.</p>
+    <p><a href="./">← Wróć do strony głównej</a></p>
+  </main>
+  <footer><div class="shell"><span>Serwer Wymiana · prywatna aplikacja narzędziowa</span><span><a href="./">Strona główna</a></span></div></footer>
+</body>
+</html>
